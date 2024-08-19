@@ -1,0 +1,23 @@
+<div>
+  <h2>All Routes</h2>
+  <img src="C:\Interview\27Four\InterstellarTransportSystem\src\assets\Routes.PNG" alt="routes">
+  <!-- <ul *ngIf="allRoutes && allRoutes.routes.length > 0">
+    <li *ngFor="let route of allRoutes.routes">
+      Start: {{ route.startPlanet }}, End: {{ route.endPlanet }}, Distance: {{ route.distance | number:'1.2-2' }}, Path: {{ route.path.join(' -> ') }}
+    </li>
+  </ul> -->
+</div>
+
+<div>
+  <h2>Shortest Route</h2>
+  <form (ngSubmit)="findShortestRoute(startPlanet.value, endPlanet.value)">
+    <input #startPlanet placeholder="Start Planet" required />
+    <input #endPlanet placeholder="End Planet" required />
+    <button type="submit">Find Shortest Route</button>
+  </form>
+
+  <div *ngIf="shortestRoute">
+    <p>Distance: {{ shortestRoute.distance | number:'1.2-2' }}</p>
+    <p>Path: {{ shortestRoute.path.join(' -> ') }}</p>
+  </div>
+</div>

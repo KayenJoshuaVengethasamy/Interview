@@ -1,0 +1,24 @@
+To run the application
+Navigate to the Angular Project Directory:
+Copy code
+cd path to the angular-project
+Install Dependencies:
+Run npm to install the necessary packages:
+npm install
+Serve the A
+ng serve
+The Angular application should now be running at http://localhost:4200.
+Access the Application:
+Open a web browser and go to http://localhost:4200 to access the Angular application. You should be able to interact with the UI to view routes and find the shortest path.
+
+
+Java
+I would have liked to display all the routes as well as planets available.
+My Computer gave issues there so I had to leave it out
+I had to implement CORS through WebConfig as the results were not being displayed on screen
+The unit tests work as expected and ensure that everything works well and as expected
+My SQL script works as expected and takes all data needed to insert it into the database
+I could not move the excel data without having to hardcode it
+Angular
+I had chosen angular as it was something I was familiar with
+I would like to get the image to load correctly
